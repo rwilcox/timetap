@@ -24,6 +24,7 @@ OptionParser.new do |opts|
 end.parse!
 
 
+$LOAD_PATH.unshift( File.expand_path(File.dirname(__FILE__) + "/../lib/") )
 
 require 'time_tap'
 unless options['foreground']
